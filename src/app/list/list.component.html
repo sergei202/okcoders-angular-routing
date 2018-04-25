@@ -1,0 +1,9 @@
+<ul>
+	<li *ngFor="let item of items; let id=index">
+		<a [routerLink]="['/list',id]">{{item}}</a>
+	</li>
+</ul>
+
+<hr>
+
+<h1>{{currentItem}}</h1>
